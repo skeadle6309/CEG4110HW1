@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".MainActivity">
+
+    <LinearLayoaut
+        android:layout_width="339dp"
+        android:layout_height="504dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:inputType="text"
+            android:singleLine="false"
+            android:text="Tap to Change Color"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/colorLabel"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="14dp" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginRight="128dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="20dp"
+            android:onClick="changeBackgroundColor"
+            android:text="Change Color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="goToSecondPage"
+            android:text="Draw"
+            app:layout_constraintTop_toBottomOf="@+id/btn"
+            tools:layout_editor_absoluteX="148dp" />
+
+    </LinearLayoaut>
+
+</android.support.constraint.ConstraintLayout>
